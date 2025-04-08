@@ -5,24 +5,23 @@ const btnColor1 = document.querySelector("#btn1");
 const btnColor2 = document.querySelector("#btn2");
 const btnColor3 = document.querySelector("#btn3");
 
-// butona click edende
+
 btnColor1.addEventListener("click", () => {
-    cardBg1.style.backgroundColor = "red","blue";
-    cardBg1.style.color = "white";
-    btnColor1.style.backgroundColor = "white";
-    btnColor1.style.color = "black";
+    const randomcolor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    cardBg1.style.backgroundColor = randomcolor;
+    const colorView1 = document.querySelector("#colorView1");
+    colorView1.textContent ="color:"+ randomcolor;
+
 })
-// ozune click edende
-cardBg2.addEventListener("click", () => {
-    cardBg2.style.backgroundColor = "blue";
-    cardBg2.style.color = "white";
-    btnColor2.style.backgroundColor = "white";
-    btnColor2.style.color = "black";
+btnColor2.addEventListener("click", () => {
+    const randomcolor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    cardBg2.style.backgroundColor = randomcolor;
+    const colorView2 = document.querySelector("#colorView2");
+    colorView2.textContent ="color:"+ randomcolor;
 })
-// butona click edende
 btnColor3.addEventListener("click", () => {
-    cardBg3.style.backgroundColor = "green";
-    cardBg3.style.color = "white";
-    btnColor3.style.backgroundColor = "white";
-    btnColor3.style.color = "black";
+    const randomcolor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    cardBg3.style.backgroundColor = randomcolor;
+    const colorView3 = document.querySelector("#colorView3");
+    colorView3.textContent ="color:"+ randomcolor;
 })
